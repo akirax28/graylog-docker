@@ -86,9 +86,6 @@ services:
       - graylogdata:/usr/share/graylog/data
       - geocity:/etc/graylog/server/
     deploy:
-      placement:
-        constraints:
-          - node.labels.tipo == teste
       resources:
         limits:
           memory: 1G
